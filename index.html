@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- slick css cdn -->
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+
+    <!-- jquary cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font awosome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js link -->
+    <script src="./js/app.js"></script>
+    <title>Bark</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="navbar p-3 navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mt-1 me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuClickable"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="false"
+                  aria-expanded="false"
+                >
+                  Explore
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownMenuClickable"
+                >
+                  <div id="dropdown-fisrt-item">
+                    <div class="drop-header d-flex justify-content-between">
+                      <p>Services</p>
+                      <a href="#">See all</a>
+                    </div>
+                    <li onclick="seeItem()" class="drop-items">
+                      <a class="drop-item" href="#"
+                        ><i class="fa-regular fa-briefcase me-2"></i> Business
+                        <span> > </span></a
+                      >
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#"
+                        ><i class="fa-regular fa-briefcase me-2"></i> Business
+                        <span> > </span></a
+                      >
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#"
+                        ><i class="fa-regular fa-briefcase me-2"></i> Business
+                        <span> > </span></a
+                      >
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#"
+                        ><i class="fa-regular fa-briefcase me-2"></i> Business
+                        <span> > </span></a
+                      >
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#"
+                        ><i class="fa-regular fa-briefcase me-2"></i> Business
+                        <span> > </span></a
+                      >
+                    </li>
+
+                    <div
+                      class="drop-header mt-3 d-flex justify-content-between"
+                    >
+                      <p>Popular Services</p>
+                      <a href="#">See all</a>
+                    </div>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#">Dog & Pet Grooming</a>
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#">Dog Training</a>
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#">Dog Walking</a>
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#">Life Coaching</a>
+                    </li>
+                    <li class="drop-items">
+                      <a class="drop-item" href="#">Life Coaching</a>
+                    </li>
+                  </div>
+                  <div id="hide-dropdown">
+                    <div onclick="backToMain()" class="hide-header">
+                      <a href="#"
+                        ><i class="fa-solid fa-arrow-left-long me-3"></i> Back
+                        to Explore
+                      </a>
+                    </div>
+                    <hr>
+                    <a class="drop-item2" href="#"
+                    ><i class="fa-regular fa-briefcase me-2"></i> Business
+                    <a class="hide-drop-a" href="#">See all</a></a>
+                  <li class="drop-items mt-3">
+                    <a class="drop-item" href="#">Accounting</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Business Consulting</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Mobile Software Development</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Security Guard Services</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Social Media Marketing</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Web Design</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Counselling</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Hypnotherapy</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Massage Therapy</a>
+                  </li>
+                  <li class="drop-items">
+                    <a class="drop-item" href="#">Nutritionists & Dietitians</a>
+                  </li>
+                </div>
+                </li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+            <div class="nav-right-items">
+              <a class="mt-1" href="#"> Login </a>
+              <button class="btn btn-primary rounded-pill">
+                <img
+                  class="mx-2"
+                  src="./img/header-button-icon.png"
+                  width="24px"
+                  height="24px"
+                  alt=""
+                />
+                Join as a Professional
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+   
+    <main>
+           <!-- banner section -->
+         <section class="banner-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8">
+                 <div class="banner-content">
+                   <h1>Find the perfect <br>
+                    professional for you</h1>
+                    <h2>Get free quotes within minutes</h2>
+                    <div class="banner-search-box">
+                      <form action="">
+                        <input placeholder="What service are you looking for?" class="lookingFor-input"></input>
+                        <input placeholder="Postcode" class="code-input"></input>
+                        <button class="search-btn" type="submit">Search</button>
+                      </form>
+                    </div>
+                    <a class="my-3" href="#">Popular: House Cleaning, Web Design, Personal Trainers</a>
+                 </div>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+          </div>
+         </section>
+          <!-- home carousel -section -->
+          <section class="home-carousel">
+            <div class="container-fluid">
+                   <div class="row">
+                    <div class="home-slider">
+                      <div class="col-lg-4">
+                        <!-- Button trigger modal -->
+                        <div class="slider-card">
+                          <div class="card-headers">
+                            <p>Available online</p>
+                          </div>
+                         <div type="button" class="slider-inner" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="./img/home-slider-1.png" alt="">
+                         </div>
+                         <p class="card-type">Personal Trainers</p>
+                        </div>
+                       <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                             <div class="modal-content">
+                              <img src="./img/89-1533487226764.jpg" alt="">
+                               <div class="slider-modal-header d-flex justify-content-between p-3">
+                                 <h5 class="modal-title" id="exampleModalLabel">Who is this accounting for?</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                                <section class="option-box">
+
+                                  
+                                
+                                  <label>
+                                    <input type="radio" name="light" checked>
+                                    <span class="design"></span>
+                                    <span class="text">Option 1</span>
+                                  </label>
+                                
+                                  <label>
+                                    <input type="radio" name="light">
+                                    <span class="design"></span>
+                                    <span class="text">Option 2</span>
+                                  </label>
+                                
+                                  <label>
+                                    <input type="radio" name="light">
+                                    <span class="design"></span>
+                                    <span class="text">Option 3</span>
+                                  </label>
+                                
+                                </section>
+                               </div>
+                               <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                   </div>  
+                      <div class="col-lg-4 mt-3">
+                        <!-- Button trigger modal -->
+                        <div class="slider-card">
+                          <div class="card-headers">
+                            <p>Available online</p>
+                          </div>
+                         <div type="button" class="slider-inner" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="./img/home-slider-1.png" alt="">
+                         </div>
+                         <p class="card-type">Personal Trainers</p>
+                        </div>
+                       <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                                 ...
+                               </div>
+                               <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                   </div>  
+                      <div class="col-lg-4">
+                        <!-- Button trigger modal -->
+                        <div class="slider-card">
+                          <div class="card-headers">
+                            <p>Available online</p>
+                          </div>
+                         <div type="button" class="slider-inner" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="./img/home-slider-1.png" alt="">
+                         </div>
+                         <p class="card-type">Personal Trainers</p>
+                        </div>
+                       <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                                 ...
+                               </div>
+                               <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                   </div>  
+                      <div class="col-lg-4 mt-3">
+                        <!-- Button trigger modal -->
+                        <div class="slider-card">
+                          <div class="card-headers">
+                            <p>Available online</p>
+                          </div>
+                         <div type="button" class="slider-inner" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <img src="./img/home-slider-1.png" alt="">
+                         </div>
+                         <p class="card-type">Personal Trainers</p>
+                        </div>
+                       <!-- Modal -->
+                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                             <div class="modal-content">
+                               <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                               </div>
+                               <div class="modal-body">
+                                 ...
+                               </div>
+                               <div class="modal-footer">
+                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                   </div>  
+                    </div>
+                   </div>
+            </div>
+          </section>
+
+    </main>
+
+    <!-- bootstrap js cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slick js cdn -->
+    <script src="js/slick.min.js"></script>
+     <!-- slider script -->
+     <script>
+      $(document).ready(function(){
+        $('.home-slider').slick({
+          infinite: true,
+          slidesToShow: 3.2,
+          // slidesToScroll: 1,
+          autoplay: true,
+              autoplaySpeed: 1000,
+          responsive: [
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1.5,
+              slidesToScroll: 1,
+              arrows: false,
+              autoplay: true,
+              autoplaySpeed: 2000,
+              centerPadding: '50px',
+              dots: true        
+            }
+          }  
+        ]
+    });
+
+        
+
+});
+     </script>
+  </body>
+</html>

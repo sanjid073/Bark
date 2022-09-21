@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Gordita";
+  src: url("../fonts/Gordita-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gordita";
+}
+a {
+  text-decoration: none !important;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #111637;
+  background-color: #fff;
+}
+/* navbar css */
+.navbar {
+}
+.navbar-brand img {
+  width: 106px;
+  height: 32px;
+}
+.nav-link {
+  color: #111637 !important;
+  font-size: 1em !important;
+}
+.dropdown-toggle::after {
+  position: absolute !important;
+  top: 48% !important;
+  color: #111637 !important;
+}
+.nav-right-items {
+}
+.nav-right-items a {
+  color: #111637 !important;
+  font-size: 1rem !important;
+  margin-right: 1em;
+  transition: 0.4s;
+}
+.nav-right-items a:hover {
+  text-decoration: underline !important;
+}
+.nav-right-items button {
+}
+.dropdown-menu {
+  width: 328px !important;
+  height: 534px !important;
+  padding: 24px !important;
+}
+.drop-header a {
+  font-size: 14px;
+  color: #6c7191 !important;
+  text-decoration: underline !important;
+}
+.drop-item {
+  display: inline-block !important;
+  width: 95%;
+  color: #6c7191 !important;
+  transition: 0.5s;
+}
+.drop-item:hover {
+  text-decoration: underline !important;
+  color: black !important;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.drop-item:hover .fa-regular,
+.far {
+  color: blue !important;
+}
+.drop-item span {
+  margin-left: 64%;
+}
+.fa-regular,
+.far {
+  font-weight: 600 !important;
+  display: inline;
+}
+.drop-items {
+  display: inline-block !important;
+  width: 100%;
+  padding: 5px 0 !important;
+  clear: both;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  font-size: 14px;
+  color: #6c7191 !important;
+}
+#hide-dropdown {
+  display: none;
+}
+.hide-header {
+}
+.hide-header a {
+  color: #111637 !important;
+  font-size: 1rem !important;
+}
+.hide-header a i {
+}
+
+.drop-item2 {
+  width: 95%;
+  color: #111637;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.drop-item2:hover {
+  text-decoration: underline !important;
+  color: black !important;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.drop-item2:hover .fa-regular,
+.far {
+  color: blue !important;
+}
+.hide-drop-a {
+  margin-left: 40%;
+  font-size: 14px;
+  color: #6c7191 !important;
+  text-decoration: underline !important;
+}
+
+/* banner-section */
+.banner-section {
+}
+.banner-content {
+  padding: 10vh 0 25vh;
+}
+.banner-content h1 {
+  font-size: 2.75em;
+  margin-bottom: 0.25em !important;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #111637;
+}
+.banner-content h2 {
+  font-size: 1.5em;
+  margin-bottom: 1.5em !important;
+  color: #9da0b6 !important;
+}
+
+.banner-search-box {
+  margin-bottom: 1em;
+}
+.lookingFor-input {
+  font-size: 16px;
+  padding: 0.75em 1em;
+  border: 2px solid #e6e7ec;
+  color: #111637;
+  font-weight: 400;
+  width: 354px;
+  height: 52px;
+  outline: none;
+}
+.code-input {
+  font-size: 16px;
+  padding: 0.75em 1em;
+  border: 2px solid #e6e7ec;
+  color: #111637;
+  font-weight: 400;
+  width: 216px;
+  height: 52px;
+  margin-left: -7px;
+  outline: none;
+}
+.search-btn {
+  padding: 0.75em 1em;
+  min-width: 7.75em;
+  color: #fff !important;
+  box-shadow: 0 3px 6px 0 rgb(45 122 241 / 30%);
+  background-color: #2d7af1;
+  border-color: #2d7af1;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 52px;
+  margin-left: 5px;
+}
+.banner-content a {
+  color: #9da0b6 !important;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* home-carousel */
+
+.home-carousel {
+  padding: 30px 0;
+  overflow-x: hidden;
+}
+.slider-card {
+  position: relative;
+  transition: 0.5s;
+}
+.slider-card:hover {
+  transform: scale(1.05);
+}
+.slider-inner img {
+  border-radius: 5px;
+}
+.card-type {
+  position: absolute;
+  bottom: -2%;
+  left: 4%;
+  color: white;
+  font-size: 1em;
+}
+.card-headers {
+  position: absolute;
+  top: 5%;
+  right: 18%;
+  color: #fff;
+  background-color: #2d7af1 !important;
+  border-radius: 13px !important;
+}
+.card-headers p {
+  margin-bottom: 0 !important;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+/* slider-modal */
+.modal-content{
+  width: 576px !important;
+  height: 468px !important;
+}
+.modal-title{
+  margin-left: 100px;
+  font-size: 1.6em !important; 
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
+  color: #111637 !important;
+}
+.option-box{}
+.option-box label {
+  display: block;
+  width: 90%;
+  height: 50px;
+  border: 1px solid #e6e7ec;
+  border-radius: 4px 4px 0 0;
+  padding: 0.6em 1.2em;
+  font-size: 18px;
+  margin: auto;
+  color: #6c7191;
+  cursor: pointer;
+}
