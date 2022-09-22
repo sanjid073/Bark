@@ -241,40 +241,37 @@
                        <!-- Modal -->
                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                            <div class="modal-dialog">
-                             <div class="modal-content">
-                              <img src="./img/89-1533487226764.jpg" alt="">
+                             <div id="modal-content" class="modal-content">
+                              <img id="modalHeader-img" src="./img/89-1533487226764.jpg" alt="">
                                <div class="slider-modal-header d-flex justify-content-between p-3">
-                                 <h5 class="modal-title" id="exampleModalLabel">Who is this accounting for?</h5>
+                                 <h5  class="modal-title" id="slider-header">Who is this accounting for?</h5>
                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                </div>
                                <div class="modal-body">
-                                <section class="option-box">
-
-                                  
-                                
+                                <section class="option-box">                             
                                   <label>
                                     <input type="radio" name="light" checked>
                                     <span class="design"></span>
-                                    <span class="text">Option 1</span>
+                                    <span id="first-text" class="text">male</span>
                                   </label>
                                 
                                   <label>
                                     <input type="radio" name="light">
                                     <span class="design"></span>
-                                    <span class="text">Option 2</span>
+                                    <span id="sec-text" class="text">female</span>
                                   </label>
                                 
                                   <label>
                                     <input type="radio" name="light">
                                     <span class="design"></span>
-                                    <span class="text">Option 3</span>
+                                    <span id="third-text" class="text">others</span>
                                   </label>
                                 
                                 </section>
                                </div>
                                <div class="modal-footer">
-                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                 <button type="button" class="btn btn-primary">Save changes</button>
+                                 
+                                 <button onclick="modalClick()" type="button" class="btn btn-primary">Continue</button>
                                </div>
                              </div>
                            </div>
@@ -374,6 +371,50 @@
                    </div>
             </div>
           </section>
+          <!-- media-banner -->
+          <section class="media-banner py-5">
+            <div class="container">
+                    <div class="media-banner-box">
+                       <img src="./img/media-img1.png" alt="">
+                       <img src="./img/media-img2.png" alt="">
+                       <img src="./img/media-img3.png" alt="">
+                       <img src="./img/media-img4.png" alt="">
+                       <img src="./img/media-img5.png" alt="">
+                    </div>
+            </div>
+          </section>
+          <!-- Discover section -->
+          <section class="discover-section my-5">
+             <div class="container">
+                 <h3 class="discover-title text-center mx-auto">Discover</h3>
+                 <div class="row">
+                   <div class="col-lg-2">
+                     <div class="discover-box">
+                      <div class="d-flex justify-content-center align-items-center discover-icon-button rounded-extra p-2 border mx-auto">
+                        <i class="fa-regular fa-house-blank"></i>
+                    </div>
+                    <p class="text-center pt-2 pt-md-4">
+                      Home
+                      <br>
+                      &amp; Garden
+                  </p>
+                     </div>
+                   </div>
+                   <div class="col-lg-2">
+                     <div class="discover-box">
+                      <div class="d-flex justify-content-center align-items-center discover-icon-button rounded-extra p-2 border mx-auto">
+                        <i class="fa-regular fa-house-blank"></i>
+                    </div>
+                    <p class="text-center pt-2 pt-md-4">
+                      Home
+                      <br>
+                      &amp; Garden
+                  </p>
+                     </div>
+                   </div>
+                 </div>
+             </div>
+          </section>
 
     </main>
 
@@ -388,7 +429,7 @@
      <!-- slider script -->
      <script>
       $(document).ready(function(){
-        $('.home-slider').slick({
+        $('.home-slider1').slick({
           infinite: true,
           slidesToShow: 3.2,
           // slidesToScroll: 1,
